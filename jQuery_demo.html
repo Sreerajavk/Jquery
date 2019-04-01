@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="">
+    <head>
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>jquery demo</title>
+    
+            <!-- Bootstrap CSS -->
+            <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+            <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+            <style>
+                button{
+                    margin-bottom: 2em;
+                }
+                #content{
+                    display: none;
+                }
+            </style>
+
+    </head>
+    <body>
+
+
+        
+        <div class="container">
+            
+            <div class="row">
+                
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-lg-offset-3" style="margin-top:5em;">
+
+                        <button name="bt" id="bt">Click Me!</button>
+                        
+                        <div class="panel panel-primary">
+                                <div class="panel-heading" id="heading">Panel heading</div>
+                                <div class="panel-body" id="content">Panel Content</div>
+                        </div>
+                          
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+
+
+
+        
+        
+       
+
+        
+
+        <script>
+            
+                // $("#heading").click(function(){
+                //     $("#content").slideDown("slow");
+                // });
+
+                $("#heading").click(function(){
+                    $("#content").slideToggle("slow");
+                });
+
+                // $("#heading").click(function(){
+                //     $("#content").slideUp("slow");
+                // });
+
+
+                $('button').on('click' , function(){
+
+                        alert("clicked me!")
+
+                });
+                
+            </script>
+    </body>
+</html>
