@@ -60,6 +60,8 @@
 
                         <p id="username_p"></p>
                         <p id="password_p"></p>
+
+                        <button id="change" class="btn btn-primary" style="display:none;">Change css </button>
                         
                           
                     
@@ -87,8 +89,18 @@
 
                        $('#username_p').html('Entered username is ' + username);
                        $('#password_p').html('Entered password is ' + password);
+                       $('#change').css({'display'  : 'block'})
 
                 });
+
+                $('#change').on('click' , function(){
+
+                        $('#username_p').css({'color' : 'blue'});
+                        $('#password_p').css({'font-size': '20px'})
+
+                });
+
+
                 
             </script>
     </body>
